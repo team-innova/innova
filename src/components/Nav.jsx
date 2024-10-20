@@ -5,7 +5,7 @@ export default function Nav() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="container px-4 py-6 flex justify-between items-center border-b border-[#3C2241]">
+        <header className="px-8 py-6 flex justify-between items-center border-b border-[#3C2241]">
             <div className="flex items-center">
                 <Link to="/">
                     <img src="/placeholder.svg?height=40&width=40" alt="Innova logo" className="h-10 w-10 mr-2" />

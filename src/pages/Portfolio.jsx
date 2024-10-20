@@ -1,63 +1,120 @@
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-import Contact from './Contact'
+import ContactForm from '../components/ContactForm'
+import { Link } from 'react-router-dom'
 
 export default function Portfolio() {
     return (
-        <div className="min-h-screen bg-gray-900 text-white">
+        <div className="min-h-screen bg-[#191919] text-primary">
 
             {/* Hero Section */}
             <Nav />
 
-            {/* Portfolio Section */}
-            <section className="bg-gray-900 text-white py-16">
+            {/* Services Section */}
+            <section className="px-12">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-4xl font-bold mb-2">Portfolio</h2>
-                    <p className="text-purple-400 mb-12">Nuestras creaciones</p>
-
-                    <div className="mb-20">
-                        <div className="flex flex-col md:flex-row items-start">
-                            <div className="w-full md:w-1/2 mb-8 md:mb-0">
-                                <p className="text-purple-400 mb-2">Plataforma de cursos</p>
-                                <h3 className="text-3xl font-bold mb-4">CEAL Hipoacusia</h3>
-                                <div className="bg-gray-800 h-48 rounded-lg mb-4"></div>
-                                <div className="flex space-x-2">
-                                    <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
-                                    <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
-                                </div>
-                            </div>
-                            <div className="w-full md:w-1/2 md:pl-8">
-                                <img src="/placeholder.svg?height=300&width=500" alt="CEAL Hipoacusia Wireframe" className="w-full rounded-lg" />
-                            </div>
-                        </div>
+                    <div className="mb-12">
+                        <h2 className="text-4xl font-bold mb-2">Portfolio</h2>
+                        <p className="text-sm text-[#9857D3]">Nuestras creaciones</p>
                     </div>
 
-                    <div>
-                        <div className="flex flex-col md:flex-row items-start">
-                            <div className="w-full md:w-1/2 mb-8 md:mb-0 order-2 md:order-1">
-                                <img src="/placeholder.svg?height=300&width=500" alt="Ahora español Wireframe" className="w-full rounded-lg" />
+                    <section className="container mx-auto py-16">
+                        <div className="relative">
+                            <div className="absolute top-0 right-0 w-3/5 h-full bg-purple-900 rounded-lg">
+                            {/* image */}
                             </div>
-                            <div className="w-full md:w-1/2 md:pl-8 order-1 md:order-2">
-                                <p className="text-purple-400 mb-2">Plataforma de cursos</p>
-                                <h3 className="text-3xl font-bold mb-4">Ahora español</h3>
-                                <p className="mb-4 text-gray-300">
-                                    A web app for visualizing personalized Spotify data. View your
-                                    top artists, top tracks, recently played tracks, and detailed audio
-                                    information about each track. Create and save new playlists of
-                                    recommended tracks based on your existing playlists and more.
-                                </p>
-                                <div className="flex space-x-2">
-                                    <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
-                                    <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
+                            <div className="relative flex justify-between items-center">
+                                <div className="pr-8">
+                                    <p className="text-sm text-[#9857D3]">Plataforma de cursos</p>
+                                    <h2 className="text-4xl font-bold mb-8">CEAL Hipoacusia</h2>
+                                    <div className="bg-gray-800 bg-opacity-50 rounded-lg p-6 mb-6">
+                                        <p className="text-lg leading-tight">
+                                            A web app for visualizing personalized Spotify data. View your
+                                        </p>
+                                        <p className="text-lg leading-tight">
+                                            top artists, top tracks, recently played tracks, and detailed audio
+                                        </p>
+                                        <p className="text-lg leading-tight">
+                                            information about each track. Create and save new playlists of
+                                        </p>
+                                        <p className="text-lg leading-tight">
+                                            recommended tracks based on your existing playlists and more.
+                                        </p>
+                                    </div>
+                                    <Link to="/about" className="text-[#9857D3] flex items-center">
+                                        Conócenos
+                                        <svg className="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                                        </svg>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
+                    </section>
+
+                    <section className="container mx-auto py-16">
+                        <div className="relative">
+                            <div className="absolute top-0 left-0 w-3/5 h-full bg-purple-900 rounded-lg">
+                            {/* image */}
+                            </div>
+                            <div className="relative flex justify-between items-center">
+                                <div className=""></div>
+                                <div className="pl-8 text-right">
+                                    <p className="text-sm text-[#9857D3]">Plataforma de cursos</p>
+                                    <h2 className="text-4xl font-bold mb-8">Ahora español</h2>
+                                    <div className="bg-gray-800 bg-opacity-50 rounded-lg p-6 mb-6 text-left">
+                                        <p className="text-lg leading-tight">
+                                            A web app for visualizing personalized Spotify data. View your
+                                        </p>
+                                        <p className="text-lg leading-tight">
+                                            top artists, top tracks, recently played tracks, and detailed audio
+                                        </p>
+                                        <p className="text-lg leading-tight">
+                                            information about each track. Create and save new playlists of
+                                        </p>
+                                        <p className="text-lg leading-tight">
+                                            recommended tracks based on your existing playlists and more.
+                                        </p>
+                                    </div>
+                                    <Link to="/about" className="text-[#9857D3] flex items-center justify-end">
+                                        Conócenos
+                                        <svg className="ml-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                                        </svg>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </section>
+
+            {/* LatestProject Section */}
+            <section className="px-12 py-16">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-4xl font-bold mb-12 text-center">Conoce nuestro último proyecto</h2>
+                    <h3 className="text-2xl font-semibold mb-4">Pagina de cosos medicos</h3>
+                    <p className="mb-8 ">
+                        Nuestro equipo está compuesto por profesionales apasionados y especializados en distintas áreas clave del desarrollo web.
+                        Contamos con desarrolladores frontend que se encargan de crear interfaces intuitivas y responsivas, desarrolladores backend que
+                        aseguran que todo funcione perfectamente detrás de escena, un tester QA dedicado a garantizar la calidad y el rendimiento de
+                        nuestros proyectos, y una diseñadora UX/UI que se enfoca en ofrecer experiencias digitales atractivas y fáciles de usar. Juntos,
+                        nos complementamos para ofrecer soluciones web robustas y a medida, adaptadas a cada cliente.
+                    </p>
+                    <div className="relative aspect-video bg-purple-900 rounded-lg mb-8 flex items-center justify-center">
+                        <span className="text-2xl">Video</span>
+                    </div>
+                    <div className="flex justify-end">
+                        <button className="bg-gradient-to-b from-[#9747FF] to-[#39337A] text-primary px-8 py-3 rounded-lg text-lg">
+                            Pruébalo aquí
+                        </button>
                     </div>
                 </div>
             </section>
 
             {/* Contact Form */}
-            <Contact />
+            <ContactForm />
 
             {/* Footer */}
             <Footer />
