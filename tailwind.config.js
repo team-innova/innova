@@ -6,12 +6,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
+      boxShadow: {
+        'custom': '0px 0px 30px 0px #763CAC',
+      },
       colors: {
-        primary: 'linear-gradient(180deg, #9747FF 0%, #39337A 100%)',
+        primary: '#CCD6F6F2',
         secondary: '#2B0B3A',
       },
     },
   },
   plugins: [],
 }
-
