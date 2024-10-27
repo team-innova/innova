@@ -1,10 +1,10 @@
 import {
   createRoutesFromElements,
-  Route,
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 import { lazy, Suspense } from "react";
+import { HashRouter as Route } from 'react-router-dom';
 
 const Landing = lazy(() => import("./pages/Landing"));
 const About = lazy(() => import("./pages/About"));

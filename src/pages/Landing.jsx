@@ -23,7 +23,7 @@ export default function Landing() {
             <section className="container mx-auto px-12 py-16">
                 <div className="relative">
                     <div className="absolute top-0 left-0 w-3/5 h-full bg-purple-900 rounded-lg">
-                    {/* image */}
+                        {/* image */}
                     </div>
                     <div className="relative flex justify-between items-center">
                         <div className=""></div>
@@ -67,26 +67,25 @@ export default function Landing() {
                     {[1, 2, 3].map((i) => (
                         <div
                             key={i}
-                            className="p-6"
+                            className="p-1 rounded-xl"
                             style={{
-                                border: '2px solid',
-                                borderImageSource: 'linear-gradient(180deg, #049299 0%, #235468 42.5%, #3C2241 94.5%)',
-                                borderImageSlice: 1,
-                                borderRadius: '1rem'
+                                background: 'linear-gradient(180deg, #049299 0%, #235468 50%, #763CAC 100%)'
                             }}
                         >
-                            <div className="h-12 w-12 mb-4 flex items-center justify-center">
-                                <span className="text-2xl">💻</span>
+                            <div className="bg-[#191919] rounded-xl p-6 h-full flex flex-col items-center">
+                                <div className="h-12 w-12 mb-4 flex items-center justify-center">
+                                    <span className="text-2xl">💻</span>
+                                </div>
+                                <h3 className="text-xl font-bold mb-8">Desarrollo De Sitios Y Aplicaciones Web</h3>
+                                <p className="text-left mb-8">Nos encargamos de tu proyecto de forma integral: Planificación, Diseño UX / UI y Programación.</p>
                             </div>
-                            <h3 className="text-xl font-bold mb-8">Desarrollo De Sitios Y Aplicaciones Web</h3>
-                            <p className="text-left mb-8">Nos encargamos de tu proyecto de forma integral: Planificación, Diseño UX / UI y Programación.</p>
                         </div>
                     ))}
                 </div>
             </section>
 
             {/* Tools Section */}
-            <section className="container mx-auto px-12 py-20">
+            < section className="container mx-auto px-12 py-20" >
                 <h2 className="text-3xl font-bold mb-8 text-center">¿Con que herramientas trabajamos?</h2>
                 <div className="grid grid-cols-5 gap-4">
                     {[...Array(10)].map((_, i) => (

@@ -61,7 +61,14 @@ export default function About() {
                                 key={index}
                                 className={`p-4 flex flex-col items-center text-center ${index === teamMembers.slice(0, 5).length - 1 && teamMembers.length % 4 !== 0 ? 'md:col-span-4' : ''}`}
                             >
-                                <div className="w-48 h-48 bg-gray-800 rounded-lg mb-4"></div>
+                                <div
+                                    className="p-1 rounded-xl mb-4"
+                                    style={{
+                                        background: 'linear-gradient(180deg, #049299 0%, #235468 50%, #763CAC 100%)'
+                                    }}
+                                >
+                                    <div className="w-48 h-48 bg-gray-800 rounded-xl"></div>
+                                </div>
                                 <h4 className="font-bold">{member.name}</h4>
                                 <p>{member.role}</p>
                             </div>
